@@ -1,9 +1,22 @@
 {
+    "version": 2,
     "builds": [
       {
-        "source": "/(.*)*",
-        "destination": "/index.html"
-       
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/../server/server.js" 
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/build/$1"
       }
     ]
   }
