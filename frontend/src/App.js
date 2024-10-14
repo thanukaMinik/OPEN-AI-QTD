@@ -13,7 +13,7 @@ function App() {
     setMessages([...messages, { sender: 'user', text: userInput }]);
 
     // Send user input to the server (Node.js)
-    const response = await fetch('https://open-ai-qtd-fg2i-server.vercel.app/chat', {
+    const response = await fetch('https://open-ai-qtd-fg2i-server.vercel.app/api/chat', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
