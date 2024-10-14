@@ -1,0 +1,10 @@
+{
+    "builds": [
+      {
+        "source": "/(.*)*",
+        "destination": "/index.html"
+       
+      }
+    ]
+  }
+  
