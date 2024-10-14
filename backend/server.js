@@ -9,6 +9,11 @@ const port = 5000;
 app.use(express.json());
 app.use(cors());
 
+app.use(cors({
+    origin: 'https://open-ai-qtd.vercel.app' // Replace with your actual frontend URL
+}));
+
+
 // In-memory storage for memory functionality
 let memory = {};
 
