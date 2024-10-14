@@ -103,7 +103,7 @@ app.post('/api/chat', async (req, res) => { // Updated endpoint path
             },
             {
                 headers: {
-                    Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, // Use environment variable for API key
+                    Authorization: `Bearer sk-gB-CSRkah3lpO1y62w12LOwfsll42t1HQ_5iJhaJifT3BlbkFJD9y7xD0uEsxUCTgDal98JBm4xg8H_jfMz7X5i9_eoA`, // Use environment variable for API key
                 },
             }
         );
