@@ -9,10 +9,9 @@ const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
-const allowedOrigins = ['open-ai-7tg0kop6e-thanukas-projects.vercel.app', 'https://open-ai-qtd.vercel.app']; // Update this to your frontend URL
 
 app.use(cors({
-    origin: allowedOrigins, // Allow only your frontend to access the API
+    origin: ['open-ai-7tg0kop6e-thanukas-projects.vercel.app', 'https://open-ai-qtd.vercel.app'], // Allow only your frontend to access the API
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true // Allow credentials (if needed)
 }));
