@@ -19,7 +19,7 @@ app.use(cors({
 let memory = {}; // In-memory storage for memory functionality
 
 async function getStockPrice(stockSymbol) {
-    const apiKey = process.env.ALPHA_VANTAGE_API_KEY; // Use environment variable for API key
+    const apiKey = '03CCPFZVOFKONAAY'; // Use environment variable for API key
     const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${stockSymbol}&interval=5min&apikey=${apiKey}`;
 
     try {
