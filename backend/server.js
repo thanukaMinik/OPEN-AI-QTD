@@ -16,7 +16,6 @@ app.use(cors({
 }));
 
 app.use(express.json());
-app.options('*', cors()); // Pre-flight handling
 
 
 const openai = new OpenAI({
