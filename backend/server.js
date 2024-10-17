@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: ['http://localhost:3001','open-ai-7tg0kop6e-thanukas-projects.vercel.app', 'https://open-ai-qtd.vercel.app'], // Allow only your frontend to access the API
+    origin: ['open-ai-7tg0kop6e-thanukas-projects.vercel.app', 'https://open-ai-qtd.vercel.app'], // Allow only your frontend to access the API
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true // Allow credentials (if needed)
 }));
